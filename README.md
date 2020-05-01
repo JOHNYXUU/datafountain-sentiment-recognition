@@ -1,5 +1,5 @@
 ﻿# 申明
-该博客所有代码都在colab上运行，关于如何使用colab，可以参考这篇博客。
+该博客所有代码都在colab上运行，关于如何使用colab，可以参考我的这篇博客。
 [colab教程](https://blog.csdn.net/JOHNYXUU/article/details/105870308)
  
  这份baseline来源于vx公众号 **i数据智能**
@@ -8,9 +8,6 @@
 
 最终成绩43名，并不是很高。（第一次参加nlp比赛，还是菜狗）
 
-全部代码在我的github上
-可以自取
-[githu链接](https://github.com/JOHNYXUU/datafountain-)
 
 # 题目描述
 [比赛链接](https://www.datafountain.cn/competitions/423)
