@@ -111,7 +111,7 @@ def main():
     inputs = compute_input_arrays(df_train, input_categories, tokenizer, MAX_SEQUENCE_LENGTH)
     test_inputs = compute_input_arrays(df_test, input_categories, tokenizer, MAX_SEQUENCE_LENGTH)
 
-    gkf = StratifiedKFold(n_splits=10, shuffle=True, random_state=0).split(X=df_train[input_categories].fillna('-1'),
+    gkf = StratifiedKFold(n_splits=5, shuffle=True, random_state=0).split(X=df_train[input_categories].fillna('-1'),
                                                                            y=df_train[output_categories].fillna('-1'))
     valid_preds = []
     test_preds = []
@@ -134,7 +134,7 @@ def main():
     opr = OptimizedRounder()
 
 
-    gkf = StratifiedKFold(n_splits=10,shuffle=True,random_state=0).split(X=df_train[input_categories].fillna('-1'), y=df_train[output_categories].fillna('-1'))
+    gkf = StratifiedKFold(n_splits=5,shuffle=True,random_state=0).split(X=df_train[input_categories].fillna('-1'), y=df_train[output_categories].fillna('-1'))
     for fold, (train_idx, valid_idx) in enumerate(gkf):
       print('flod: ',fold)
       valid_outputs = to_categorical(outputs[valid_idx])
